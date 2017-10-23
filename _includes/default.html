@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{{ page.title }} - Innovative Seed Coating Solutions</title>
+	{% if page.description %}
+	<meta name="description" content="{{ page.description }}">
+	{% endif %}
+	<meta name="author" content="{{ site.author.name }}">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link href="{{ site.BASE_PATH }}/assets/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="{{ site.BASE_PATH }}/assets/resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="{{ site.BASE_PATH }}/assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<nav class="navbar navbar-default visible-xs" role="navigation">
+		{% assign pages = site.pages | sort: 'menu-order' %}
+		<div class="navbar-header">
+			<button type="button" class="btn btn-default dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation">
+				Menu <span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu" role="menu" tabindex="-1">
+				{% for page in pages %}{% if page.menu-visible %}
+						<li><a href="{{ page.url }}" {% if page.menu-indent %}class="menu-indent"{% endif%}><i class="fa fa-{{ page.menu-icon }}" aria-hidden="true"></i>{{ page.menu-title }}</a></li>
+				{% endif %}{% endfor %}
+				<li class="divider"></li>
+				<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+			</ul>
+
+			{% if site.author.email %}
+			<a type="button" class="navbar-toggle nav-link" href="mailto:{{ site.author.email }}">
+				<i class="fa fa-envelope"></i>
+			</a>
+			{% endif %}
+			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
+				<img src="{{ site.BASE_PATH}}/assets/media/{{ page.sidebar-image }}" width="35" class="img-circle" />
+				{{ site.title }}
+			</a>
+		</div>
+	</nav>
+
+	<div class="btn-group hidden-xs" id="nav-menu">
+		<button type="button" class="btn btn-default dropdown-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation">
+			Menu <span class="caret"></span>
+		</button>
+		
+		<ul class="dropdown-menu" role="menu" tabindex="-1">
+			{% for page in pages %}{% if page.menu-visible %}
+					<li><a href="{{ page.url }}" {% if page.menu-indent %}class="menu-indent"{% endif%}><i class="fa fa-{{ page.menu-icon }}" aria-hidden="true"></i>{{ page.menu-title }}</a></li>
+			{% endif %}{% endfor %}
+			<li class="divider"></li>
+			<li><a href="#"><i class="fa fa-arrow-up"></i>Top of Page</a></li>
+		</ul>
+	</div>
+
+	<div class="col-sm-3 sidebar hidden-xs">
+		{% include sidebar.html %}
+	</div>
+
+	<div class="col-sm-9 col-sm-offset-3">
+		{{ content }}
+
+		<footer>
+			<hr/>
+			<p>
+				&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
+			</p>
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="{{ site.BASE_PATH }}/assets/js/app.js"></script>
+</body>
+</html>
