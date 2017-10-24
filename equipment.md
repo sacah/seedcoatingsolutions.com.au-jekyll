@@ -6,9 +6,9 @@ menu-icon: cogs
 menu-title: Equipment
 menu-order: 4
 layout: page
-sidebar-image: iankalms-small.jpg
+sidebar-image: sidebar-home.jpg
 ---
 
-Coaters & Treaters
+[Coaters & Treaters](equipment/coaters-treaters.html)
 
-Dryers​
+[Dryers​](equipment/dryers.html)

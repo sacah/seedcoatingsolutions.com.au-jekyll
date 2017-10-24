@@ -2,14 +2,15 @@
 
 body{
 	color: #2c3e50;
+	font-size: 15px;
 }
 
 .sidebar {
 	position: fixed;
 	top: 0px;
-	padding-top: 10%;
-	background-color: #2c3e50;
-	color: #fff;
+	padding-top: 70px;
+	background-color: #838c78;
+	color: #eff3df;
 	height: 100%;
 }
 
@@ -20,11 +21,12 @@ body{
 .sidebar-header .title{
 	letter-spacing: 3px;
 	text-transform: uppercase;
+	font-size: 1.8em;
 }
 
 .sidebar-header .title a{
 	text-decoration: none;
-	color: #fff;
+	color: #eff3df;
 }
 
 a.nav-link {
@@ -38,8 +40,8 @@ a.nav-link i{
 a.nav-link:hover { color: #777; }
 
 #bio {
-	font-family: "Courier New", Courier, monospace;
-	font-size: 11px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
@@ -83,7 +85,7 @@ article .share .gplus:hover {
 }
 
 .page-header {
-	color: #e74c3c;
+	color: #443730;
 	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
 }
 
@@ -96,6 +98,8 @@ article .share .gplus:hover {
 article {
 	max-width: 720px;
 }
+
+ARTICLE A { color: #455561; }
 
 article.home div a, article.home pre a { color: #2c3e50; }
 article.home div a:hover, article.home pre a:hover { color: #2c3e50; text-decoration: none; }
@@ -197,11 +201,17 @@ NAV .dropdown-menu {
     display: block;
 }
 
+#sidebar-nav {
+	border-top: solid rgba(255, 255, 255, 0.25) 1px;
+    padding: 15px 0;
+	margin: 20px 0;
+}
 #sidebar-nav UL {
 	list-style-type: none;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 100;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
 }
 
 #sidebar-nav .menu-indent {
@@ -214,5 +224,5 @@ NAV .dropdown-menu {
 }
 
 #sidebar-nav A {
-	color: #FFF;
+	color: #eff3df;
 }

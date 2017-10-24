@@ -17,3 +17,8 @@ Various types of dryers are available to dry treated or coated seeds and this is
 Some light and fluffy seeds require other methods of drying, as they do not readily fluidise, so alternative dryer designs are required.
 
 [Contact me](/contact.html) today to discuss your drying needs.
+
+![Red Seeds Background cw Fluid Bed](/assets/media/Red Seeds Background cw Fluid Bed.jpg)
+![First Dry Stainless all cropped](/assets/media/First Dry Stainless all cropped.jpg)
+![China fluid bed in construction1 Dec12 137](/assets/media/China fluid bed in construction1 Dec12 137.jpg)
+![belt dryer](/assets/media/belt dryer.jpg)
